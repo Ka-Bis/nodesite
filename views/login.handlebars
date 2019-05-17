@@ -1,0 +1,40 @@
+<section class="section">
+    <div class="container is full-hd">
+        <form action="/user/loginAuth" method="POST" enctype="multipart/form-data">
+            <h1>Se connecter</h1><br>
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" placeholder="Email input" name="email">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    {{!-- <span class="icon is-small is-right">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </span> --}}
+                </div>
+                {{!-- <p class="help is-danger">This email is invalid</p> --}}
+            </div>
+
+            <div class="field">
+                <label class="label">Password</label>
+                <p class="control has-icons-left">
+                    <input class="input" type="password" placeholder="Password" name="password">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                </p>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link">Enregistrer</button>
+                </div>
+                <div class="control">
+                    <button class="button is-text">Annuler</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</section>

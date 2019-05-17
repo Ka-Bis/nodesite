@@ -1,0 +1,52 @@
+<section class="section">
+    <div class="container is full-hd">
+
+
+
+
+        <form action="/user/register" method="POST" enctype="multipart/form-data">
+            <h1 class="title">S'inscrire</h1><br>
+            <div class="container field">
+                {{#each errors}}
+                <p class="is-2">{{this}}</p>
+                {{/each}}
+            </div>
+            <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Text input" name="name" value={{data.name}}>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" placeholder="Email input" name="email" value={{data.email}}>
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Password</label>
+                <p class="control has-icons-left">
+                    <input class="input" type="password" placeholder="Password" name="password" value={{data.password}}>
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                </p>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-success">Enregistrer</button>
+                </div>
+                <div class="control">
+                    <button type="reset" class="button is-text">Annuler</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</section>

@@ -1,0 +1,11 @@
+<section class="section">
+    <div class="container">
+        <h1 class="title">{{article.title}}</h1>
+
+        <p><img src="{{article.image}}"/></p>
+        {{!-- <p>{{<article.intro}}</p> --}}
+        <p>{{stripTags article.content}}</p>
+        <p>Publié le <time>{{moment createDate format='DD/MM/YY'}} | {{moment createDate "calendar"}}</time></p>
+    </div>
+</section>
+
